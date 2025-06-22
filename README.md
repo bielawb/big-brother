@@ -1,6 +1,7 @@
+
 # Big Brother is Watching
 
-![Big Brother/ Hania Bielawska](Presentation/Media/Big-Brother.jpg)
+![Big Brother/ Hania Bielawska](Presentation/Media/big-brother.png)
 
 Folders:
 

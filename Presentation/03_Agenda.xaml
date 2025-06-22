@@ -22,29 +22,29 @@
             Plan for today...
         </TextBlock>
         <Image Grid.Column="1" Source="Media/PSConfEU-Logo.png" HorizontalAlignment="Right" Height="100"/>
-        <Image Grid.Column="0" Grid.RowSpan="3" Source="Media/Big-Brother.jpg" >
+        <Image Grid.Column="0" Grid.RowSpan="3" Source="Media/big-brother.png" >
              <Image.Effect>
                 <DropShadowEffect Direction="-45" Color="#FFB6C2CB" ShadowDepth="10" BlurRadius="14" />
             </Image.Effect>
         </Image>
         <StackPanel Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Margin="20,20,20,20">
           <StackPanel Orientation="Horizontal">
-            <Image Source="Media/UFO.png" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill"
+            <Image Source="Media/eye.png" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill"
               Width="120" VerticalAlignment="Center" Margin="20,20,20,20" />
             <TextBlock VerticalAlignment="Center" FontSize="35" FontFamily="CaskaydiaCove Nerd Font Mono">Preparations</TextBlock>
           </StackPanel>
           <StackPanel Orientation="Horizontal">
-            <Image Source="Media/UFO.png" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill"
+            <Image Source="Media/eye.png" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill"
               Width="120" VerticalAlignment="Center" Margin="20,20,20,20" />
             <TextBlock VerticalAlignment="Center" FontSize="35" FontFamily="CaskaydiaCove Nerd Font Mono">Sysinternals</TextBlock>
           </StackPanel>
           <StackPanel Orientation="Horizontal">
-            <Image Source="Media/UFO.png" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill"
+            <Image Source="Media/eye.png" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill"
               Width="120" VerticalAlignment="Center" Margin="20,20,20,20" />
             <TextBlock VerticalAlignment="Center" FontSize="35" FontFamily="CaskaydiaCove Nerd Font Mono">Built-in tools</TextBlock>
           </StackPanel>
           <StackPanel Orientation="Horizontal">
-            <Image Source="Media/UFO.png" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill"
+            <Image Source="Media/eye.png" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill"
               Width="120" VerticalAlignment="Center" Margin="20,20,20,20" />
             <TextBlock VerticalAlignment="Center" FontSize="35" FontFamily="CaskaydiaCove Nerd Font Mono">Q&amp;A</TextBlock>
           </StackPanel>
