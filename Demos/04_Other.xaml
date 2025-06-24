@@ -22,7 +22,7 @@
             </TextBlock.Effect>
             Other - PowerShell, pktmon
         </TextBlock>
-        <Image Grid.Row="1" Grid.ColumnSpan="3" Source="../Presentation/Media/Big-Brother.jpg" >
+        <Image Grid.Row="1" Grid.ColumnSpan="3" Source="../Presentation/Media/big-brother.png" >
              <Image.Effect>
                 <DropShadowEffect Direction="-45" Color="#FFB6C2CB" ShadowDepth="10" BlurRadius="14" />
             </Image.Effect>

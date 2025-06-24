@@ -1,8 +1,11 @@
 ﻿$win11 = Import-Clixml -Path C:\RecycleBin\win11.clixml
 $session = New-PSSession -ComputerName win11.igo.com -Credential $win11
-$sampleFolder = Join-Path $PSScriptRoot -ChildPath SampleFiles
-if ($env:PSModulePath -split ';' -notcontains $sampleFolder) {
-    $env:PSModulePath += ";$sampleFolder"
+Invoke-Command -Session $session {
+    # Cleanup...
+    Remove-Item -Recurse -Path HKLM:\SOFTWARE\Sysinternals -ErrorAction SilentlyContinue
+    Remove-Item -Recurse -Path HKCU:\Software\Sysinternals -ErrorAction SilentlyContinue
+    Remove-Item -Recurse -Path HKLM:\SOFTWARE\Policies\Microsoft\Windows\PowerShell -ErrorAction SilentlyContinue
+    Remove-Item -Path C:\RecycleBin\PktMonCapture* -ErrorAction SilentlyContinue
 }
 
 $3 = @($psISE.CurrentPowerShellTab.Files.Where{ $_.DisplayName -eq '3.xaml' })[0]
