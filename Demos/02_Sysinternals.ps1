@@ -10,9 +10,9 @@ New-Item -Path HKLM:\SOFTWARE\Sysinternals -ItemType Key
 New-ItemProperty -Path HKLM:\Software\Sysinternals -PropertyType Dword -Name EulaAccepted -Value 1 -Force
 
 handle Documents
-handle -nobanner -v Documents | ConvertFrom-Csv
+handle -nobanner -v Documents | ConvertFrom-Csv | Sort-Object
 
-du -nobanner -c -l 5 'C:\Program Files' | ConvertFrom-Csv
+du -nobanner -c -l 5 'C:\Program Files' | ConvertFrom-Csv | Sort-Object { [int]$_.FileCount } -Descending | select -First 10 | Format-List Path, FileCount
 
 ru -nobanner -c -l 1 HKLM\Software | ConvertFrom-Csv
 

@@ -14,6 +14,7 @@ $1 = @($psISE.CurrentPowerShellTab.Files.Where{ $_.DisplayName -eq '1.xaml' })[0
 $0 = @($psISE.CurrentPowerShellTab.Files.Where{ $_.DisplayName -eq '0.ps1' })[0]
 $main = @($psISE.CurrentPowerShellTab.Files.Where{ $_.DisplayName -eq '00_Title.xaml' })[0]
 
+$demoGodsFailedMe = $true
 Start-Sleep -Milliseconds 100
 $wshell.SendKeys('^r')
 do {
